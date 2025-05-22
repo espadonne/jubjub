@@ -1,0 +1,45 @@
+/* src/index.css */
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #fafafa;
+  color: #333;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.controls {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.controls label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+}
+.bird {
+  font-size: 4rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.bounce {
+  animation: bounce 0.5s;
+}
+@keyframes bounce {
+  0%,100% { transform: translateY(0); }
+  50%   { transform: translateY(-20px); }
+}
+.word {
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.title {
+  margin-top: 2rem;
+  text-align: center;
+}
